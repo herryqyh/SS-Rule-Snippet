@@ -2,6 +2,6 @@
 #!desc=Modify system AQI value
 #!system=ios
 [Script]
-AQI-US = type=http-response, pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?, requires-body=true, script-path=/path/to/iOS_Weather_AQI_Standard.js
+AQI-US = type=http-response, pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?, requires-body=true, script-path=https://raw.githubusercontent.com/herryqyh/SS-Rule-Snippet/herryqyh-patch-1/Scripts/Surge/iOS_Weather_AQI_Standard.js
 [MITM]
 hostname = weather-data.apple.com
